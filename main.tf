@@ -21,6 +21,7 @@ locals {
     default = 9099
     DEV     = 9098
     PROD    = 9097
+    UAT     = 9096
     }
 
      container_port = lookup(local.port_map, terraform.workspace, 9099)
